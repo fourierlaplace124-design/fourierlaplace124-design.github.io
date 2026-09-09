@@ -1,203 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Zhixuan Zhao</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      line-height: 1.6;
-      color: #222;
-      background: #f7f7f7;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 40px 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 36px;
-      border-radius: 16px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-      margin-bottom: 24px;
-    }
-
-    .header {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-      flex-wrap: wrap;
-    }
-
-    .avatar {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      object-fit: cover;
-      background: #ddd;
-    }
-
-    h1 {
-      margin: 0;
-      font-size: 36px;
-    }
-
-    h2 {
-      margin-top: 0;
-      border-bottom: 2px solid #eee;
-      padding-bottom: 8px;
-    }
-
-    .subtitle {
-      font-size: 18px;
-      color: #666;
-      margin-top: 8px;
-    }
-
-    a {
-      color: #0969da;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      padding-left: 22px;
-    }
-
-    .links a {
-      margin-right: 16px;
-    }
-
-    .visitor-map-widget {
-      position: fixed;
-      right: 24px;
-      bottom: 24px;
-      width: 220px;
-      padding: 16px;
-      background: white;
-      border-radius: 18px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-      font-size: 14px;
-      z-index: 999;
-    }
-    
-    .visitor-map-widget h3 {
-      margin: 0 0 10px 0;
-      font-size: 16px;
-    }
-    
-    .visitor-map-widget p {
-      margin: 6px 0;
-      color: #666;
-      font-size: 13px;
-    }
-    
-    .visitor-map-widget img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-    
-  </style>
+  <meta name="description" content="Zhixuan Zhao, an undergraduate student at Xingjian College, Tsinghua University. Research in inverse problems, sparse reconstruction, and scientific machine learning.">
+  <meta name="theme-color" content="#653279">
+  <meta property="og:title" content="Zhixuan Zhao">
+  <meta property="og:description" content="Undergraduate at Tsinghua University. Inverse problems, sparse reconstruction, numerical simulation, and multiphysics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://fourierlaplace124-design.github.io/">
+  <link rel="canonical" href="https://fourierlaplace124-design.github.io/">
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="container">
+  <a class="skip-link" href="#main">Skip to content</a>
 
-    <section class="card header">
-      <img class="avatar" src="assets/profile.jpg" alt="Profile photo" />
+  <div class="page">
+    <header class="topbar">
+      <a class="wordmark" href="#about" aria-label="Zhixuan Zhao, home">Zhixuan Zhao</a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+      </nav>
+    </header>
 
-      <div>
-        <h1>Zhixuan Zhao(赵之煊)</h1>
-        <p class="subtitle">
-          Undergraduate Student | AI for Physics | AI for Fluids | Computational Physics 
-        </p>
+    <main id="main">
+      <section class="profile" id="about" aria-labelledby="name">
+        <div class="profile-content">
+          <h1 id="name">Zhixuan Zhao <span class="chinese-name" lang="zh-Hans">赵之煊</span></h1>
+          <p class="position">Undergraduate Student</p>
+          <p class="affiliation">Xingjian College (Mechanical Engineering)<br><span class="tsinghua">Tsinghua University</span></p>
 
-        <p class="links">
-          <a href="mailto:zhixuan-24@mails.tsinghua.edu.cn">Email</a>
-          <a href="https://github.com/fourierlaplace124-design">GitHub</a>
-          <a href="assets/cv.pdf">CV</a>
-          <a href="https://www.linkedin.com/">LinkedIn</a>
-          <a href="assets/Wechat.jpg" target="_blank">WeChat</a>
-        </p>
-      </div>
-    </section>
+          <div class="bio">
+            <p>My research interests center on AI for inverse problems and sparse reconstruction, numerical simulation, and multiphysics. I am also interested in embodied intelligence and robotics.</p>
+            <p>I continue to collaborate with the <span class="princeton">CAB Lab at Princeton University</span> following my exchange there in spring 2026.</p>
+          </div>
 
-    <section class="card">
-      <h2>About Me</h2>
-      <p>
-        I am interested in AI for Physics, AI for Fluids, computational physics,
-        numerical simulation, and computer vision. 
-        
-        My current research interest include physics-informed machine learning, inverse problems, scientific
-        computing, and neural representations for physical systems.
-      </p>
-    </section>
+          <div class="profile-links" aria-label="Contact and profiles">
+            <a href="mailto:zz0487@princeton.edu">Email</a>
+            <a href="https://github.com/fourierlaplace124-design">GitHub <span aria-hidden="true">↗</span></a>
+            <a href="assets/Wechat.jpg" target="_blank" rel="noopener noreferrer" aria-label="WeChat QR code, opens in a new tab">WeChat <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <div class="portrait">
+          <img src="assets/profile.jpg" alt="Zhixuan Zhao in front of the Manhattan Bridge" width="2560" height="3840" fetchpriority="high" decoding="async">
+        </div>
+      </section>
 
-    <section class="card">
-      <h2>Research Interests</h2>
-      <ul>
-        <li>AI for Physics and Scientific Machine Learning</li>
-        <li>AI for Fluids and Computational Fluid Dynamics</li>
-        <li>Numerical Simulation and Inverse Problems</li>
-        <li>Computer Vision for Scientific Data</li>
-      </ul>
-    </section>
+      <p class="availability">I welcome research opportunities for summer 2027 and plan to apply to U.S. PhD programs for Fall 2028. <a href="mailto:zz0487@princeton.edu">Let's connect.</a></p>
 
-    <section class="card">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <strong>NeTMY / NV-center Relaxometry Reconstruction</strong><br />
-          Neural reconstruction framework for inverse imaging problems.
-        </li>
-        <li>
-          <strong>Finite Volume Methods and AI</strong><br />
-          Use neural network and a differentiable simulator to fix error cause by non-orthognal mesh
-        </li>
-      </ul>
-    </section>
+      <section class="section" id="publications" aria-labelledby="publications-title">
+        <h2 id="publications-title">Publications</h2>
+        <div class="section-content">
+          <article class="publication">
+            <p class="paper-status">Preprint <span aria-hidden="true">·</span> Submitted to NeurIPS 2026</p>
+            <h3><a href="https://arxiv.org/abs/2605.13988">Neural Fields for NV-Center Inverse Sensing</a></h3>
+            <p class="authors"><strong>Zhixuan Zhao</strong>, Tao Zhong, Yixun Hu, Nathalie P. de Leon, Christine Allen-Blanchette</p>
+            <p class="paper-summary">NeTMY combines neural fields with differentiable physics for sparse reconstruction, revealing how forward-model fidelity and neural parameterization shape inverse optimization.</p>
+            <div class="paper-links" aria-label="Paper resources">
+              <a href="https://arxiv.org/abs/2605.13988">arXiv <span aria-hidden="true">↗</span></a>
+              <a href="https://arxiv.org/pdf/2605.13988">PDF <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <section class="card">
-      <h2>Education</h2>
-      <p>
-        Tsinghua University, B.S. / Undergraduate Program<br />
-        2024-2028
-      </p>
-      <p>
-        Princeton University, B.S. / Undergraduate Exchange Program<br />
-        2026-2026
-      </p>
-    </section>
+      <section class="section" id="experience" aria-labelledby="experience-title">
+        <h2 id="experience-title">Research<br class="desktop-break"> Experience</h2>
+        <div class="section-content experience-list">
+          <article class="experience experience-princeton">
+            <div class="entry-heading">
+              <h3>CAB Lab <span class="institution">Princeton University</span></h3>
+              <p class="date"><time datetime="2026-02">Feb 2026</time>–Present</p>
+            </div>
+            <p class="mentors">Advisor: Prof. Christine Allen-Blanchette <span aria-hidden="true">·</span> Mentor: Tao Zhong</p>
+            <p>I led NeTMY's physical modeling and neural-field design (Feb–Jul 2026), investigating how forward-model fidelity changes reconstruction behavior and why neural parameterization mitigates center collapse. Our ongoing collaboration explores equivariant models for learning physical structure in acoustics and weather modeling.</p>
+          </article>
 
-    <section class="card">
-      <h2>Publications / Preprints</h2>
-      <ul>
-        <li>Coming soon.</li>
-      </ul>
-    </section>
+          <article class="experience experience-tsinghua">
+            <div class="entry-heading">
+              <h3>Institute of Engineering Thermophysics <span class="institution">Tsinghua University</span></h3>
+              <p class="date"><time datetime="2025-09">Sep 2025</time>–<time datetime="2026-02">Feb 2026</time></p>
+            </div>
+            <p class="mentors">Advisor: Prof. Xianghua Xu <span lang="zh-Hans">(徐向华)</span></p>
+            <p>I developed a CNN surrogate to infer cell-wise correction coefficients from temperatures on two opposing surfaces, addressing non-orthogonal mesh errors in finite-volume heat-transfer simulations. I led the implementation, including ANSYS mesh parsing, and benchmarked the model against least-squares-based methods on simple 3D geometries.</p>
+          </article>
+        </div>
+      </section>
 
-    <section class="card">
-      <h2>Contact</h2>
-      <p>
-        Email: <a href="mailto:fourierlaplace124@gmail.com">fourierlaplace124@gmail.com</a>
-      </p>
-      <p>
-        Email: <a href="mailto:zz0487@princeton.edu">zz0487@princeton.edu</a>
-      </p>
-      <p>
-        Email: <a href="mailto:zhixuan-24@mails.tsinghua.edu.cn">zhixuan-24@mails.tsinghua.edu.cn</a>
-      </p>
-    </section>
+      <section class="section" id="education" aria-labelledby="education-title">
+        <h2 id="education-title">Education</h2>
+        <div class="section-content education-list">
+          <div class="education-entry">
+            <div>
+              <h3 class="tsinghua">Tsinghua University</h3>
+              <p>Xingjian College (Mechanical Engineering)<br>Undergraduate Student</p>
+            </div>
+            <p class="date"><time datetime="2024">2024</time>–<time datetime="2028">2028</time> <span class="expected">(expected)</span></p>
+          </div>
+          <div class="education-entry">
+            <div>
+              <h3 class="princeton">Princeton University</h3>
+              <p>Exchange Student</p>
+            </div>
+            <p class="date"><time datetime="2026-01">Jan</time>–<time datetime="2026-05">May 2026</time></p>
+          </div>
+        </div>
+      </section>
 
+      <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+        <h2 id="skills-title">Skills</h2>
+        <dl class="section-content skills">
+          <div><dt>Programming</dt><dd>Python, MATLAB</dd></div>
+          <div><dt>Simulation tools</dt><dd>COMSOL Multiphysics, ANSYS</dd></div>
+        </dl>
+      </section>
+    </main>
+
+    <footer>
+      <span>Zhixuan Zhao <span lang="zh-Hans">赵之煊</span></span>
+      <a href="mailto:zz0487@princeton.edu">zz0487@princeton.edu</a>
+    </footer>
   </div>
 </body>
 </html>
