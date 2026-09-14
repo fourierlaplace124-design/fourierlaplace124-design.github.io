@@ -280,6 +280,14 @@ h3 {
 
 .education-entry + .education-entry { margin-top: 22px; }
 .education-entry h3 { font-size: 15px; }
+.education-location {
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: normal;
+}
 .education-entry > div > p { margin-top: 3px; font-size: 13px; color: var(--muted); }
 .expected { font-size: 11px; }
 
