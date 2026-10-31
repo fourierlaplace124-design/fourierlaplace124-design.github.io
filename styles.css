@@ -302,6 +302,7 @@ h3 {
   letter-spacing: normal;
 }
 .education-entry > div > p { margin-top: 3px; font-size: 13px; color: var(--muted); }
+.coursework { margin-top: 22px; font-size: 13px; color: var(--muted); }
 .expected { font-size: 11px; }
 
 .skills { display: grid; gap: 10px; }
