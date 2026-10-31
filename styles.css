@@ -38,7 +38,7 @@ a {
 
 a:hover { text-decoration: underline; }
 
-a:focus-visible {
+a:focus-visible, button:focus-visible {
   outline: 2px solid var(--purple);
   outline-offset: 5px;
   border-radius: 2px;
@@ -319,6 +319,36 @@ footer {
 footer > span > span { margin-left: 8px; }
 footer a { overflow-wrap: anywhere; }
 
+html.cv-open { overflow: hidden; }
+
+.cv-dialog {
+  width: min(100% - 48px, 1000px);
+  max-width: none;
+  height: 90vh;
+  height: 90dvh;
+  max-height: none;
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--paper);
+  color: var(--ink);
+  box-shadow: 0 24px 80px rgb(44 41 48 / 25%);
+}
+
+.cv-dialog:not([open]) { display: none; }
+.cv-dialog::backdrop { background: rgb(44 41 48 / 55%); }
+.cv-dialog-content { display: flex; flex-direction: column; height: 100%; min-height: 0; }
+.cv-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 16px 20px; }
+.cv-toolbar p { color: var(--muted); font-size: 12px; }
+.cv-toolbar form { margin: 0; }
+.cv-close { border: 0; border-radius: 4px; padding: 8px 10px; background: transparent; color: var(--purple); font: inherit; font-size: 13px; cursor: pointer; }
+.cv-close:hover { background: var(--purple-soft); }
+.cv-close span { margin-left: 6px; font-size: 18px; }
+.cv-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 20px; padding: 0 20px 16px; font-size: 13px; font-weight: 600; }
+.cv-download { padding: 7px 12px; border-radius: 4px; background: var(--purple); color: white; }
+.cv-frame { flex: 1; min-height: 0; width: 100%; border: 0; border-top: 1px solid var(--line); background: white; }
+
 @media (max-width: 760px) {
   .page { width: calc(100% - 44px); }
   .profile { grid-template-columns: minmax(0, 1fr) 144px; gap: 30px; padding-top: 36px; }
@@ -355,6 +385,9 @@ footer a { overflow-wrap: anywhere; }
   .skills > div { grid-template-columns: 116px minmax(0, 1fr); gap: 10px; }
   .skills dd { font-size: 13px; }
   footer { padding-block: 20px 26px; }
+  .cv-dialog { width: calc(100% - 24px); height: 94vh; height: 94dvh; }
+  .cv-toolbar { padding: 12px 14px; }
+  .cv-actions { padding: 0 14px 12px; gap: 10px 14px; }
 }
 
 @media (max-width: 360px) {
@@ -374,6 +407,7 @@ footer a { overflow-wrap: anywhere; }
   body { background: white; font-size: 11px; }
   .page { width: 100%; }
   .topbar, .skip-link, .profile-links { display: none; }
+  .cv-dialog { display: none; }
   .profile { padding-top: 0; gap: 30px; grid-template-columns: minmax(0, 1fr) 110px; }
   .portrait { width: 110px; height: 140px; }
   h1 { font-size: 26px; }

@@ -12,6 +12,7 @@
   <meta property="og:url" content="https://fourierlaplace124-design.github.io/">
   <link rel="canonical" href="https://fourierlaplace124-design.github.io/">
   <link rel="stylesheet" href="styles.css">
+  <script src="cv.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -24,6 +25,7 @@
         <a href="#publications">Publications</a>
         <a href="#conferences">Conferences</a>
         <a href="#experience">Experience</a>
+        <a href="assets/Zhixuan_Zhao_CV.pdf" data-cv-open>CV</a>
       </nav>
     </header>
 
@@ -40,6 +42,7 @@
           </div>
 
           <div class="profile-links" aria-label="Contact and profiles">
+            <a href="assets/Zhixuan_Zhao_CV.pdf" data-cv-open>CV</a>
             <a href="mailto:zz0487@princeton.edu">Email</a>
             <a href="https://github.com/fourierlaplace124-design">GitHub <span aria-hidden="true">↗</span></a>
             <a href="assets/Wechat.jpg" target="_blank" rel="noopener noreferrer" aria-label="WeChat QR code, opens in a new tab">WeChat <span aria-hidden="true">↗</span></a>
@@ -162,5 +165,24 @@
       <a href="mailto:zz0487@princeton.edu">zz0487@princeton.edu</a>
     </footer>
   </div>
+
+  <dialog id="cv-dialog" class="cv-dialog" aria-labelledby="cv-title">
+    <div class="cv-dialog-content">
+      <header class="cv-toolbar">
+        <div>
+          <h2 id="cv-title">Curriculum Vitae</h2>
+          <p>Zhixuan Zhao</p>
+        </div>
+        <form method="dialog">
+          <button class="cv-close" type="submit" aria-label="Close CV preview" autofocus>Close <span aria-hidden="true">×</span></button>
+        </form>
+      </header>
+      <div class="cv-actions">
+        <a class="cv-download" href="assets/Zhixuan_Zhao_CV.pdf" download="Zhixuan_Zhao_CV.pdf">Download PDF</a>
+        <a href="assets/Zhixuan_Zhao_CV.pdf" target="_blank" rel="noopener noreferrer">Open in new tab <span aria-hidden="true">↗</span></a>
+      </div>
+      <iframe class="cv-frame" title="Zhixuan Zhao's curriculum vitae" data-src="assets/Zhixuan_Zhao_CV.pdf#view=FitH&amp;zoom=page-width&amp;pagemode=none"></iframe>
+    </div>
+  </dialog>
 </body>
 </html>
