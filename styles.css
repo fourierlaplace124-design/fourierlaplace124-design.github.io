@@ -227,14 +227,6 @@ h3 {
 }
 
 .authors strong { color: var(--ink); font-weight: 600; }
-.paper-affiliations {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4px 18px;
-  margin-top: 3px;
-  color: var(--muted);
-  font-size: 12px;
-}
 .paper-summary { margin-top: 13px; font-size: 14px; }
 .paper-links { margin-top: 12px; }
 
@@ -283,6 +275,8 @@ h3 {
 
 .mentors > span[aria-hidden] { margin-inline: 3px; }
 .experience > p:last-child { margin-top: 10px; font-size: 14px; }
+.research-projects { margin: 10px 0 0; padding-left: 18px; font-size: 14px; }
+.research-projects li + li { margin-top: 10px; }
 
 .education-entry {
   display: flex;
