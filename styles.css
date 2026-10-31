@@ -210,6 +210,11 @@ h3 {
 }
 
 .paper-status span { margin-inline: 5px; }
+.publication + .publication {
+  margin-top: 28px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
+}
 .publication h3 { font-size: 19px; }
 .publication h3 a { color: var(--ink); }
 .publication h3 a:hover { color: var(--purple); }
@@ -222,6 +227,14 @@ h3 {
 }
 
 .authors strong { color: var(--ink); font-weight: 600; }
+.paper-affiliations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  margin-top: 3px;
+  color: var(--muted);
+  font-size: 12px;
+}
 .paper-summary { margin-top: 13px; font-size: 14px; }
 .paper-links { margin-top: 12px; }
 
